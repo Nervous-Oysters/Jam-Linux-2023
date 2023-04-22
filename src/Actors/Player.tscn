@@ -63,7 +63,7 @@ collision_layer = 0
 script = ExtResource("1_ehfqo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -11)
+position = Vector2(2, -8)
 texture = ExtResource("2_ljawh")
 hframes = 6
 
