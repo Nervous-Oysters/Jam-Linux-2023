@@ -110,5 +110,6 @@ func perform(action):
 			if LEFT: DIRECTION = -1
 			else: DIRECTION = 0
 		"press_jump":
+			if !is_on_floor(): return
 			JUMPING = true
 			jump_time_done = current_time

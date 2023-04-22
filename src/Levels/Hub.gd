@@ -17,7 +17,6 @@ func _process(delta):
 		f_list.append(follower)
 		follower.target = player
 		add_child(follower)
-		
 	if Input.is_action_just_pressed("debug2"):
 		for follower in f_list:
 			if follower.is_inside_tree(): follower.queue_free()
