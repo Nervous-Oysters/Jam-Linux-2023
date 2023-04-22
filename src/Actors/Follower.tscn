@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2cji83tys51a"]
 
 [ext_resource type="Script" path="res://src/Actors/Follower.gd" id="1_2u4fe"]
-[ext_resource type="Texture2D" uid="uid://7qdt66jilcv6" path="res://assets/rabbit.png" id="2_hclxn"]
+[ext_resource type="Texture2D" uid="uid://cjlcp23hvk6am" path="res://assets/rabbit.png" id="2_hclxn"]
 
 [node name="Follow" type="CharacterBody2D"]
 collision_layer = 0
