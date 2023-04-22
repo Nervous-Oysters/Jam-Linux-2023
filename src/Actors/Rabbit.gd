@@ -38,8 +38,12 @@ func rabbit_process(delta):
 
 
 	# move left and right
-	if DIRECTION:
+	if DIRECTION: #1 : droite, -1 : gauche
 		velocity.x = DIRECTION * SPEED
+		if DIRECTION == -1 :
+			$Sprite2D.flip_h = true
+		else :
+			$Sprite2D.flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
