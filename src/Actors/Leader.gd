@@ -11,9 +11,11 @@ func _physics_process(delta):
 		LEFT = true
 		DIRECTION = -1
 	if Input.is_action_just_pressed("move_right"):
+		animation.play("run")
 		RIGHT = true
 		DIRECTION = 1
 	if Input.is_action_just_released("move_left"):
+		animation.play("run")
 		LEFT = false
 		if RIGHT: DIRECTION = 1
 		else: DIRECTION = 0

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dom60h7r0tb11"]
+[gd_scene load_steps=7 format=3 uid="uid://dom60h7r0tb11"]
 
 [ext_resource type="Texture2D" uid="uid://d0crrfi3xadle" path="res://assets/green.png" id="1_tv8qq"]
 [ext_resource type="Script" path="res://src/Levels/Hub.gd" id="1_y0ydk"]
 [ext_resource type="PackedScene" uid="uid://c1cwln04crr3m" path="res://src/Actors/Player.tscn" id="2_gg4s8"]
+[ext_resource type="PackedScene" uid="uid://baiu3055nitgi" path="res://src/Bonus/FuckEgg.tscn" id="4_6i1vx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_06uo7"]
 texture = ExtResource("1_tv8qq")
@@ -25,3 +26,8 @@ layer_0/tile_data = PackedInt32Array(2555904, 0, 0, 2555905, 0, 0, 2555906, 0, 0
 
 [node name="Player" parent="." instance=ExtResource("2_gg4s8")]
 position = Vector2(399, 326)
+
+[node name="FuckEgg" parent="." instance=ExtResource("4_6i1vx")]
+position = Vector2(546, 561)
+
+[editable path="FuckEgg"]

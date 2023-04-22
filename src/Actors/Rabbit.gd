@@ -8,10 +8,12 @@ var CURRENT_JUMP = 0.0
 var JUMPING = false
 var LEFT = false
 var RIGHT = false
+var INVINCIBILITY = 0
+
+@onready var animation = $AnimationPlayer
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
 
 func rabbit_process(delta):
 	# Handle Jump.
@@ -26,6 +28,14 @@ func rabbit_process(delta):
 		velocity.y += gravity * delta
 	if not JUMPING:
 		CURRENT_JUMP = 0.0
+	if is_on_floor():
+		animation.play("run")
+	else:
+		animation.play("jump")
+		
+	if INVINCIBILITY:
+		INVINCIBILITY -= 1
+
 
 	# move left and right
 	if DIRECTION:
