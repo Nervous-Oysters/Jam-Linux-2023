@@ -15,13 +15,17 @@ var jump_time_done
 var current_time
 
 func _ready():
-	base_time_deviation = rng.randf_range(0.1*1000, 0.5*1000)
+	base_time_deviation = rng.randf_range(1, 30)
 	position = target.position
 	left_count = 0
 	right_count = 0
 	jump_start = null
 	jump_delta = 0
 	jump_time_done = null
+	if Input.is_action_pressed("move_left"):
+		perform("press_left")
+	if Input.is_action_pressed("move_right"):
+		perform("press_right")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
@@ -62,26 +66,25 @@ func _physics_process(delta):
 		jump_start = current_time
 	if Input.is_action_just_released("jump"):
 		jump_delta = current_time - jump_start
-		print("Delta : ", jump_delta)
 		jump_start = null
-	if jump_time_done != null and jump_delta+jump_time_done <= current_time:
-		print("End at : ", current_time)
+	if jump_time_done != null and jump_delta+jump_time_done <= current_time + 1:
 		JUMPING = false
 		jump_time_done = null
 		jump_delta = 0
 
 	# base the noise on the distance with the player. Should try coef
 	var dist = position.distance_to(target.position)
-	var noise = abs(rng.randfn(0., abs(dist))) / 100
+	var noise = dist / 1000
+
 	
 	# add in a buffer, the inputs and the timing to perfom them
 	# We add a base deviation and a noise
 	if pressed_inputs:
 		buffer.append([pressed_inputs,
-		max(current_time + base_time_deviation - noise, current_time)])
+		max(current_time + base_time_deviation + noise, current_time)])
 		# Problem : if I generate the timing now and not when the follow should 
 		# do the action, the noise won't be very correct. For now, not a problem
-		
+
 	rabbit_process(delta)
 
 func perform(action):
@@ -108,6 +111,4 @@ func perform(action):
 			else: DIRECTION = 0
 		"press_jump":
 			JUMPING = true
-			print("Jump done at : ", current_time)
-			print("Should end at : ", current_time + jump_delta)
 			jump_time_done = current_time

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dom60h7r0tb11"]
 
-[ext_resource type="Texture2D" uid="uid://bpt0fumamls4x" path="res://assets/green.png" id="1_tv8qq"]
+[ext_resource type="Texture2D" uid="uid://d0crrfi3xadle" path="res://assets/green.png" id="1_tv8qq"]
 [ext_resource type="Script" path="res://src/Levels/Hub.gd" id="1_y0ydk"]
 [ext_resource type="PackedScene" uid="uid://c1cwln04crr3m" path="res://src/Actors/Player.tscn" id="2_gg4s8"]
 
