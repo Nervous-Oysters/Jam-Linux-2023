@@ -1,5 +1,4 @@
 extends Rabbit
-#@onready var animation = $AnimationPlayer
 
 func _physics_process(delta):
 
@@ -24,7 +23,5 @@ func _physics_process(delta):
 		RIGHT = false
 		if LEFT: DIRECTION = -1
 		else: DIRECTION = 0
-	if is_on_floor() :
-		animation.play("run")
 
 	rabbit_process(delta)
