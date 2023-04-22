@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
+Camera2D
 AnimationPlayer
 CollisionPolygon2D
->>>>>>> c936a0eeaee9e5975fe888ad296c57a647ab43d4
 CollisionShape2D
 Sprite2D
 Area2D
