@@ -19,7 +19,7 @@ func _ready():
 	position = target.position
 	left_count = 0
 	right_count = 0
-	jump_start = null
+	jump_start = 0
 	jump_delta = 0
 	jump_time_done = null
 	if Input.is_action_pressed("move_left"):
@@ -66,7 +66,7 @@ func _physics_process(delta):
 		jump_start = current_time
 	if Input.is_action_just_released("jump"):
 		jump_delta = current_time - jump_start
-		jump_start = null
+		jump_start = 0
 	
 	if jump_delta != null and jump_time_done != null:
 		if jump_delta + jump_time_done <= current_time:
@@ -87,7 +87,7 @@ func _physics_process(delta):
 
 	rabbit_process(delta)
 
-func perform(action):
+func perform(action): 
 	match action:
 		"press_right":
 			right_count += 1
