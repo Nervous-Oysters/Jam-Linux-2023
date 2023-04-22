@@ -1,0 +1,9 @@
+res://src/Levels/Hub.tscn
+res://src/Actors/Rabbit.tscn
+res://src/Actors/Rabbit.gd
+res://Follower.gd
+res://src/Actors/Player.tscn
+res://src/Actors/Follower.gd
+res://src/Actors/Leader.gd
+res://src/Actors/Follower.tscn
+res://src/Levels/Hub.gd
