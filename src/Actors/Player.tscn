@@ -1,10 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1cwln04crr3m"]
 
-[ext_resource type="Script" path="res://src/Actors/Rabbit.gd" id="1_p34v6"]
+[ext_resource type="Script" path="res://src/Actors/Leader.gd" id="1_ehfqo"]
 [ext_resource type="Texture2D" uid="uid://7qdt66jilcv6" path="res://assets/rabbit.png" id="2_1wyj6"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_p34v6")
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 0
+script = ExtResource("1_ehfqo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_1wyj6")
