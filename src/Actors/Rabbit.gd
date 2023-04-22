@@ -28,17 +28,14 @@ func rabbit_process(delta):
 		velocity.y += gravity * delta
 	if not JUMPING:
 		CURRENT_JUMP = 0.0
-<<<<<<< HEAD
 	if is_on_floor():
 		animation.play("run")
 	else:
 		animation.play("jump")
-
-=======
 		
 	if INVINCIBILITY:
 		INVINCIBILITY -= 1
->>>>>>> 689f622f49049e32504942633c1de6ead17be45b
+
 
 	# move left and right
 	if DIRECTION:
