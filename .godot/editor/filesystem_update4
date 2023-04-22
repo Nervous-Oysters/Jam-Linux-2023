@@ -4,3 +4,6 @@ res://src/Actors/Follower.tscn
 res://src/Actors/Follower.gd
 res://src/Actors/Leader.gd
 res://src/Actors/Rabbit.gd
+res://src/Levels/Hub.gd
+res://src/Bonus/FuckEgg.tscn
+res://src/Bonus/StarEgg.tscn
