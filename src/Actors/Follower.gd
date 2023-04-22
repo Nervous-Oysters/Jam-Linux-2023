@@ -67,14 +67,16 @@ func _physics_process(delta):
 	if Input.is_action_just_released("jump"):
 		jump_delta = current_time - jump_start
 		jump_start = null
-	if jump_time_done != null and jump_delta+jump_time_done <= current_time + 1:
-		JUMPING = false
-		jump_time_done = null
-		jump_delta = 0
+	
+	if jump_delta != null and jump_time_done != null:
+		if jump_delta + jump_time_done <= current_time:
+			JUMPING = false
+			jump_time_done = null
+			jump_delta = null
 
 	# base the noise on the distance with the player. Should try coef
 	var dist = position.distance_to(target.position)
-	var noise = dist / 1000
+	var noise = dist / 10
 
 	
 	# add in a buffer, the inputs and the timing to perfom them
@@ -82,8 +84,6 @@ func _physics_process(delta):
 	if pressed_inputs:
 		buffer.append([pressed_inputs,
 		max(current_time + base_time_deviation + noise, current_time)])
-		# Problem : if I generate the timing now and not when the follow should 
-		# do the action, the noise won't be very correct. For now, not a problem
 
 	rabbit_process(delta)
 
