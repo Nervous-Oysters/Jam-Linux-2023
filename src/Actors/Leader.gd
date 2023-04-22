@@ -1,5 +1,11 @@
 extends Rabbit
 
+var numberRabbit
+var rng = RandomNumberGenerator.new()
+var followers = preload("res://src/Actors/Follower.tscn")
+var player
+var f_list = []
+
 func _physics_process(delta):
 
 	# Handle Jump.
@@ -25,3 +31,14 @@ func _physics_process(delta):
 		else: DIRECTION = 0
 
 	rabbit_process(delta)
+
+
+func _on_fuck_egg_area_entered(area):
+	numberRabbit = rng.randi_range(2, 10)
+	player = self
+	for i in range(numberRabbit):
+		var follower = followers.instantiate()
+		f_list.append(follower)
+		follower.target = player
+		get_parent().add_child(follower)
+	get_parent().get_node("FuckEgg").queue_free()

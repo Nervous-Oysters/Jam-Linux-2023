@@ -30,4 +30,6 @@ position = Vector2(399, 326)
 [node name="FuckEgg" parent="." instance=ExtResource("4_6i1vx")]
 position = Vector2(546, 561)
 
+[connection signal="area_entered" from="FuckEgg" to="Player" method="_on_fuck_egg_area_entered"]
+
 [editable path="FuckEgg"]
