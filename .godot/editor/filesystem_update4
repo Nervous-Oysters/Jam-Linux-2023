@@ -1,4 +1,6 @@
-res://src/Levels/Hub.tscn
 res://src/Actors/Player.tscn
+res://src/Levels/Hub.tscn
 res://src/Actors/Follower.tscn
 res://src/Actors/Follower.gd
+res://src/Actors/Leader.gd
+res://src/Actors/Rabbit.gd
