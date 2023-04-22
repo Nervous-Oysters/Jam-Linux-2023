@@ -2,5 +2,13 @@ res://src/Actors/Player.tscn
 res://src/Levels/Hub.tscn
 res://src/Actors/Follower.tscn
 res://src/Actors/Follower.gd
+<<<<<<< HEAD
+res://src/Bonus/FuckEgg.gd
+res://src/Bonus/FuckEgg.tscn
+res://src/Bonus/StarEgg.tscn
+res://StarEgg.gd
+res://src/Levels/Hub.gd
+=======
 res://src/Actors/Leader.gd
+>>>>>>> c936a0eeaee9e5975fe888ad296c57a647ab43d4
 res://src/Actors/Rabbit.gd
