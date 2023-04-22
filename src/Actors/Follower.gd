@@ -12,6 +12,8 @@ var jump_start
 var jump_delta
 var jump_time_done
 
+var current_time
+
 func _ready():
 	base_time_deviation = rng.randf_range(0.1*1000, 0.5*1000)
 	position = target.position
@@ -24,7 +26,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	
-	var current_time = Time.get_ticks_msec()
+	current_time = Engine.get_frames_drawn()
 	
 	# could optimize by not checking once behind current timing
 	# but noise make it complex
@@ -57,13 +59,13 @@ func _physics_process(delta):
 	# With too much noise, jump become always too high
 	if Input.is_action_just_pressed("jump"):
 		pressed_inputs.append("press_jump")
-		jump_start = Time.get_ticks_msec()
+		jump_start = current_time
 	if Input.is_action_just_released("jump"):
-		jump_delta = Time.get_ticks_msec() - jump_start
-		print(jump_delta)
+		jump_delta = current_time - jump_start
+		print("Delta : ", jump_delta)
 		jump_start = null
-		
-	if jump_time_done != null and current_time - jump_time_done >= jump_delta:
+	if jump_time_done != null and jump_delta+jump_time_done <= current_time:
+		print("End at : ", current_time)
 		JUMPING = false
 		jump_time_done = null
 		jump_delta = 0
@@ -106,4 +108,6 @@ func perform(action):
 			else: DIRECTION = 0
 		"press_jump":
 			JUMPING = true
-			jump_time_done = Time.get_ticks_msec()
+			print("Jump done at : ", current_time)
+			print("Should end at : ", current_time + jump_delta)
+			jump_time_done = current_time
