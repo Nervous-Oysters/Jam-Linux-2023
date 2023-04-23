@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dom60h7r0tb11"]
+[gd_scene load_steps=16 format=3 uid="uid://dom60h7r0tb11"]
 
 [ext_resource type="Texture2D" uid="uid://d0crrfi3xadle" path="res://assets/green.png" id="1_tv8qq"]
 [ext_resource type="Script" path="res://src/Levels/Hub.gd" id="1_y0ydk"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://caaaiwlhpyxio" path="res://src/decor/Cloud1.tscn" id="9_gxyey"]
 [ext_resource type="PackedScene" uid="uid://du07elw14qmhf" path="res://src/decor/Cloud2.tscn" id="10_fm5te"]
 [ext_resource type="PackedScene" uid="uid://bmcs3y2oydajo" path="res://src/decor/Cloud3.tscn" id="11_s7iom"]
+[ext_resource type="PackedScene" uid="uid://bbme4dwmmou08" path="res://src/Actors/Camboy.tscn" id="12_ao5ys"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_06uo7"]
 texture = ExtResource("1_tv8qq")
@@ -521,9 +522,6 @@ z_index = -1
 position = Vector2(527, 339)
 script = ExtResource("8_sx5eg")
 
-[node name="Sprite" parent="Santa" index="0"]
-position = Vector2(0, 0)
-
 [node name="Cloud1" parent="." instance=ExtResource("9_gxyey")]
 position = Vector2(441, 299)
 
@@ -532,5 +530,8 @@ position = Vector2(365, 288)
 
 [node name="Cloud3" parent="." instance=ExtResource("11_s7iom")]
 position = Vector2(498, 275)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("12_ao5ys")]
+position = Vector2(196, 382)
 
 [editable path="Santa"]
