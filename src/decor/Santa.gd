@@ -8,4 +8,7 @@ func _ready():
 
 
 func _on_body_entered(body):
-	pass
+	if "Follow" in body.name:
+		
+
+		queue_free()

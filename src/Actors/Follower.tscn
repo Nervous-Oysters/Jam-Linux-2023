@@ -1,10 +1,26 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2cji83tys51a"]
+[gd_scene load_steps=13 format=3 uid="uid://b2cji83tys51a"]
 
 [ext_resource type="Script" path="res://src/Actors/Follower.gd" id="1_2u4fe"]
-[ext_resource type="Texture2D" uid="uid://b842ks61udgj0" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
+[ext_resource type="Texture2D" uid="uid://cwhfs22vwc5mr" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
+[ext_resource type="Texture2D" uid="uid://sumvq4dox6q8" path="res://assets/empty.png" id="3_nwkc8"]
+[ext_resource type="Texture2D" uid="uid://t6shcsy2lg82" path="res://assets/blood1.png" id="4_3r6t7"]
+[ext_resource type="Texture2D" uid="uid://c4bn8dyuu4pc0" path="res://assets/bloo2.png" id="5_neffb"]
+[ext_resource type="Texture2D" uid="uid://cmm2hekl3t6ih" path="res://assets/bloo3.png" id="6_iyt27"]
 
 [sub_resource type="Animation" id="Animation_651tx"]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_sogsw"]
 resource_name = "jump"
@@ -15,12 +31,49 @@ resource_name = "run"
 length = 0.4
 loop_mode = 1
 
+[sub_resource type="Animation" id="Animation_d36vx"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u3ggv"]
 _data = {
 "RESET": SubResource("Animation_651tx"),
+"fade_out": SubResource("Animation_d36vx"),
 "jump": SubResource("Animation_sogsw"),
 "run": SubResource("Animation_occao")
 }
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uboui"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nwkc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3r6t7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_neffb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iyt27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [node name="Follow" type="CharacterBody2D"]
 collision_layer = 4
@@ -39,3 +92,6 @@ hframes = 6
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-1, -8)
 polygon = PackedVector2Array(3, -2, 5, -5, 12, -5, 12, 0, 7, 7, -4, 8, -6, 6, -10, 3, -7, 1, -4, -2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uboui")
