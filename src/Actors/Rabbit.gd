@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Rabbit
 
-const SPEED = 300.0
+const SPEED = 250.0
 const JUMP_VELOCITY = -150.0
 var DIRECTION = 0
 var CURRENT_JUMP = 0.0

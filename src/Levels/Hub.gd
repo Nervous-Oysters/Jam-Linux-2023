@@ -5,7 +5,7 @@ var followers = preload("res://src/Actors/Follower.tscn")
 var player
 var f_list
 var cam
-var START = Vector2(184, 344)
+var START = Vector2(154, 344)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

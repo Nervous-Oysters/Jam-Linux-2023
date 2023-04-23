@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b2cji83tys51a"]
+[gd_scene load_steps=14 format=3 uid="uid://b2cji83tys51a"]
 
 [ext_resource type="Script" path="res://src/Actors/Follower.gd" id="1_2u4fe"]
 [ext_resource type="Texture2D" uid="uid://dsbpgsqeeuc31" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://daxqovwxkewac" path="res://assets/blood1.png" id="4_3r6t7"]
 [ext_resource type="Texture2D" uid="uid://ce03s2mxiatwu" path="res://assets/bloo2.png" id="5_neffb"]
 [ext_resource type="Texture2D" uid="uid://cb55ymtp620l5" path="res://assets/bloo3.png" id="6_iyt27"]
+[ext_resource type="AudioStream" uid="uid://jc8cnt02lcqx" path="res://assets/sounds/eat_egg.wav" id="7_vd663"]
 
 [sub_resource type="Animation" id="Animation_651tx"]
 length = 0.001
@@ -102,5 +103,8 @@ sprite_frames = SubResource("SpriteFrames_uboui")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
 position = Vector2(-1, -8)
 polygon = PackedVector2Array(3, -2, 5, -5, 12, -5, 12, 0, 7, 7, -4, 8, -6, 6, -10, 3, -7, 1, -4, -2)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_vd663")
 
 [connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]

@@ -16,7 +16,7 @@ var count = 30
 var dying = false
 
 func _ready():
-	base_time_deviation = rng.randf_range(1, 30)
+	base_time_deviation = rng.randf_range(1, 20)
 	position = target.position
 	velocity = target.velocity
 	left_count = 0
@@ -125,6 +125,7 @@ func reset():
 	$Sprite2D.modulate = Color(1., 1., 1.)
 
 func die():
+	$AudioStreamPlayer.play()
 	$AnimatedSprite2D.play("default")
 	$AnimationPlayer.play("fade_out")
 	dying = true

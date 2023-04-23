@@ -7,7 +7,9 @@ func _ready():
 	pass
 
 func _on_body_entered(body):
+	
 	if body.name == "Player":
+		$AudioStreamPlayer.play()
 		var followers = []
 		for child in get_parent().get_children():
 			if "Follow" in child.name: child.INVINCIBILITY = TIMER
