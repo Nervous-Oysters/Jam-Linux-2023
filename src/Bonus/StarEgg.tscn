@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqc4ymen07rc7"]
 
 [ext_resource type="Script" path="res://src/Bonus/StarEgg.gd" id="1_ow4u5"]
-[ext_resource type="Texture2D" uid="uid://bfqfewnfqp1wn" path="res://assets/egg2.png" id="2_dtqos"]
+[ext_resource type="Texture2D" uid="uid://ctq6n7pqec2ix" path="res://assets/egg2.png" id="2_dtqos"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1d1vi"]
 radius = 6.08276
