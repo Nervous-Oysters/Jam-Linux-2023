@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://du07elw14qmhf"]
 
 [ext_resource type="Script" path="res://src/decor/Cloud2.gd" id="1_apmkf"]
-[ext_resource type="Texture2D" uid="uid://t17p6415s31n" path="res://assets/cloud21.png" id="2_a4hpx"]
-[ext_resource type="Texture2D" uid="uid://buny0xvoly161" path="res://assets/cloud22.png" id="3_7l6gc"]
+[ext_resource type="Texture2D" uid="uid://ee0kbq8m0a5c" path="res://assets/cloud21.png" id="2_a4hpx"]
+[ext_resource type="Texture2D" uid="uid://degx3wdegwc0f" path="res://assets/cloud22.png" id="3_7l6gc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ykl8s"]
 radius = 2.23607
