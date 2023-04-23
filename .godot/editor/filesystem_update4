@@ -7,3 +7,7 @@ res://src/Menu/Menu.tscn
 res://src/decor/Santa.tscn
 res://src/decor/Cloud1.tscn
 res://src/decor/Cloud1.gd
+res://src/decor/Cloud2.tscn
+res://src/decor/Cloud2.gd
+res://src/decor/Cloud3.tscn
+res://src/decor/Cloud3.gd

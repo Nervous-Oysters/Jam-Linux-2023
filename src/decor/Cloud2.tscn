@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://du07elw14qmhf"]
+
+[ext_resource type="Script" path="res://src/decor/Cloud2.gd" id="1_apmkf"]
+[ext_resource type="Texture2D" uid="uid://t17p6415s31n" path="res://assets/cloud21.png" id="2_a4hpx"]
+[ext_resource type="Texture2D" uid="uid://buny0xvoly161" path="res://assets/cloud22.png" id="3_7l6gc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ykl8s"]
+radius = 2.23607
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rpbg6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a4hpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7l6gc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.5
+}]
+
+[node name="Cloud2" type="Area2D"]
+script = ExtResource("1_apmkf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ykl8s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rpbg6")
+frame_progress = 0.432241
