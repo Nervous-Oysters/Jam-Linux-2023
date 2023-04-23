@@ -4,3 +4,8 @@ res://src/Actors/Follower.tscn
 res://src/Bonus/FuckEgg.tscn
 res://src/Bonus/StarEgg.tscn
 res://src/Menu/Menu.tscn
+res://src/Bonus/FuckEgg.gd
+res://src/Actors/Leader.gd
+res://src/Actors/Follower.gd
+res://src/Bonus/StarEgg.gd
+res://src/Actors/Rabbit.gd

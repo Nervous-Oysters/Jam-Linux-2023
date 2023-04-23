@@ -1,8 +1,7 @@
 extends Rabbit
 
 var buffer = []
-var rng = RandomNumberGenerator.new()
-var base_time_deviation # in millisecond
+var base_time_deviation # in frame
 var target
 
 var left_count
@@ -17,6 +16,7 @@ var current_time
 func _ready():
 	base_time_deviation = rng.randf_range(1, 30)
 	position = target.position
+	velocity = target.velocity
 	left_count = 0
 	right_count = 0
 	jump_start = 0
@@ -113,3 +113,6 @@ func perform(action):
 			if !is_on_floor(): return
 			JUMPING = true
 			jump_time_done = current_time
+
+func reset():
+	$Sprite2D.modulate = Color(1., 1., 1.)
