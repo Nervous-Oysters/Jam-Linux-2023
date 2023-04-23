@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 AudioStreamPlayer
+=======
+Label
+TextEdit
+CollisionShape2D
+Sprite2D
+AnimationPlayer
+>>>>>>> ff9924383253f39701391fb1f392ea84ffdb97b8
 TileMap
 CharacterBody2D
 Area2D
 CanvasLayer
-CollisionShape2D
 AnimatedSprite2D
-AnimationPlayer
 Button
 VBoxContainer
 Camera2D
 CollisionPolygon2D
-Sprite2D
 Node2D
