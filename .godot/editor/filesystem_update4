@@ -1,9 +1,8 @@
-res://src/decor/Santa.tscn
-res://src/Actors/Follower.tscn
-res://src/Actors/Follower.gd
 res://src/Actors/Player.tscn
 res://src/Levels/Hub.tscn
+res://src/Actors/Follower.tscn
 res://src/Levels/End.tscn
 res://src/animation/Jump.tscn
-res://Camboy.gd
+res://src/decor/Santa.tscn
 res://src/Actors/Camboy.tscn
+res://src/animation/Jump.gd

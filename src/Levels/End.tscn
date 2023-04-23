@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ci1m4mulk51iq"]
+[gd_scene load_steps=8 format=3 uid="uid://ci1m4mulk51iq"]
 
-[ext_resource type="Texture2D" uid="uid://di1ofvfdvxlyg" path="res://assets/tile.png" id="1_8g6tf"]
+[ext_resource type="Texture2D" uid="uid://1law74xj8jtg" path="res://assets/tile.png" id="1_8g6tf"]
 [ext_resource type="PackedScene" uid="uid://caaaiwlhpyxio" path="res://src/decor/Cloud1.tscn" id="2_d1i8r"]
 [ext_resource type="PackedScene" uid="uid://du07elw14qmhf" path="res://src/decor/Cloud2.tscn" id="3_lfwop"]
 [ext_resource type="PackedScene" uid="uid://bmcs3y2oydajo" path="res://src/decor/Cloud3.tscn" id="4_agjta"]
+[ext_resource type="PackedScene" uid="uid://dhnm470eedyq7" path="res://src/animation/Jump.tscn" id="5_ysreq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rxbi7"]
 texture = ExtResource("1_8g6tf")
@@ -180,3 +181,6 @@ position = Vector2(949, 505)
 
 [node name="Cloud5" parent="." instance=ExtResource("3_lfwop")]
 position = Vector2(1013, 470)
+
+[node name="Jump" parent="." instance=ExtResource("5_ysreq")]
+position = Vector2(959, 528)

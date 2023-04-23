@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://coocasa0u4q1q"]
 
-[ext_resource type="Texture2D" uid="uid://bdrfn176t1lmp" path="res://assets/santa_open.png" id="1_dkd7v"]
-[ext_resource type="Texture2D" uid="uid://cnveftmqeo3s" path="res://assets/santa_close.png" id="2_sob0q"]
+[ext_resource type="Texture2D" uid="uid://cv1awnwj4aqq0" path="res://assets/santa_open.png" id="1_dkd7v"]
+[ext_resource type="Texture2D" uid="uid://cv4lm6u6jp6o7" path="res://assets/santa_close.png" id="2_sob0q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6hed"]
 animations = [{
@@ -19,6 +19,21 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jfsso"]
 radius = 12.0416
+
+[sub_resource type="Animation" id="Animation_qaaq5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -5)]
+}
 
 [sub_resource type="Animation" id="Animation_jey05"]
 resource_name = "bouncing"
@@ -47,21 +62,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 0.353554, 5.65685, 1, 1),
 "update": 0,
 "values": [Vector2(0, -5), Vector2(0, -5), Vector2(0, -85), Vector2(0, -5), Vector2(0, -5)]
-}
-
-[sub_resource type="Animation" id="Animation_qaaq5"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CollisionShape2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -5)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pag6k"]
