@@ -8,10 +8,4 @@ func _ready():
 
 
 func _on_body_entered(body):
-	if body.name == "Player" or "follow" in body.name:
-		for i in range(numberRabbit):
-			var follower = followers.instantiate()
-			follower.target = player
-			print(follower)
-			get_parent().add_child(follower)
-		queue_free()
+	pass

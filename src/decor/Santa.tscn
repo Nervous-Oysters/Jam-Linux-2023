@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://coocasa0u4q1q"]
 
-[ext_resource type="Texture2D" uid="uid://cv1awnwj4aqq0" path="res://assets/santa_open.png" id="1_dkd7v"]
-[ext_resource type="Texture2D" uid="uid://cv4lm6u6jp6o7" path="res://assets/santa_close.png" id="2_sob0q"]
+[ext_resource type="Texture2D" uid="uid://bhx3mql6njcxr" path="res://assets/santa_open.png" id="1_dkd7v"]
+[ext_resource type="Texture2D" uid="uid://l7w0mvr88f4x" path="res://assets/santa_close.png" id="2_sob0q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6hed"]
 animations = [{
@@ -49,7 +49,7 @@ scale = Vector2(0.8, 0.8)
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -80)
 sprite_frames = SubResource("SpriteFrames_x6hed")
-frame_progress = 0.708848
+frame_progress = 0.658937
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -5)

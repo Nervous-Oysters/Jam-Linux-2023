@@ -15,7 +15,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_po250")
 }],
-"loop": false,
+"loop": true,
 "name": &"default",
 "speed": 2.0
 }]
@@ -28,7 +28,4 @@ shape = SubResource("CircleShape2D_bu50x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8pihp")
-<<<<<<< HEAD
-=======
 frame_progress = 0.207198
->>>>>>> 88de1ec3d95d5a92a6e672814adf1ead7717bfbb

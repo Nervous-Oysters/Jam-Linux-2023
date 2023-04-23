@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b2cji83tys51a"]
 
 [ext_resource type="Script" path="res://src/Actors/Follower.gd" id="1_2u4fe"]
-[ext_resource type="Texture2D" uid="uid://b7ljw6x3qt3yt" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
+[ext_resource type="Texture2D" uid="uid://carud30svgr7q" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
 
 [sub_resource type="Animation" id="Animation_651tx"]
 length = 0.001
