@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d0crrfi3xadle" path="res://assets/green.png" id="1_tv8qq"]
 [ext_resource type="Script" path="res://src/Levels/Hub.gd" id="1_y0ydk"]
 [ext_resource type="PackedScene" uid="uid://c1cwln04crr3m" path="res://src/Actors/Player.tscn" id="2_gg4s8"]
-[ext_resource type="Texture2D" uid="uid://1law74xj8jtg" path="res://assets/tile.png" id="3_p34wj"]
+[ext_resource type="Texture2D" uid="uid://di1ofvfdvxlyg" path="res://assets/tile.png" id="3_p34wj"]
 [ext_resource type="PackedScene" uid="uid://baiu3055nitgi" path="res://src/Bonus/FuckEgg.tscn" id="4_6i1vx"]
 [ext_resource type="PackedScene" uid="uid://cqc4ymen07rc7" path="res://src/Bonus/StarEgg.tscn" id="6_qsoc0"]
 [ext_resource type="PackedScene" uid="uid://coocasa0u4q1q" path="res://src/decor/Santa.tscn" id="7_3yk3d"]
@@ -522,7 +522,7 @@ position = Vector2(527, 339)
 script = ExtResource("8_sx5eg")
 
 [node name="Sprite" parent="Santa" index="0"]
-position = Vector2(0, -30)
+position = Vector2(0, 0)
 
 [node name="Cloud1" parent="." instance=ExtResource("9_gxyey")]
 position = Vector2(441, 299)

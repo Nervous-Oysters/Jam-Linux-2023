@@ -12,6 +12,8 @@ var jump_delta
 var jump_time_done
 
 var current_time
+var count = 30
+var dying = false
 
 func _ready():
 	base_time_deviation = rng.randf_range(1, 30)
@@ -29,6 +31,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	
+	if dying:
+		count -= 1
+		if count <= 0: queue_free()
+		return 
 	
 	current_time = Engine.get_frames_drawn()
 	
@@ -116,3 +123,12 @@ func perform(action):
 
 func reset():
 	$Sprite2D.modulate = Color(1., 1., 1.)
+
+func die():
+	$AnimatedSprite2D.play("default")
+	$AnimationPlayer.play("fade_out")
+	dying = true
+
+func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	if "Santa" in area.name:
+		die()
