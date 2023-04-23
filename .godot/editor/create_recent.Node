@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 Area2D
+=======
+Button
+VBoxContainer
+>>>>>>> Stashed changes
 Camera2D
 AnimationPlayer
 CollisionPolygon2D

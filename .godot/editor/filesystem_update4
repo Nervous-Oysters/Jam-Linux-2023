@@ -1,5 +1,6 @@
-res://src/Levels/Hub.tscn
 res://src/Actors/Player.tscn
+res://src/Levels/Hub.tscn
 res://src/Actors/Follower.tscn
 res://src/Bonus/FuckEgg.tscn
 res://src/Bonus/StarEgg.tscn
+res://src/Menu/Menu.tscn
