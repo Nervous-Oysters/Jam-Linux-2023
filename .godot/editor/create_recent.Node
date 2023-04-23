@@ -1,13 +1,12 @@
-CollisionShape2D
 AnimatedSprite2D
+AnimationPlayer
+CollisionShape2D
 Area2D
 TileMap
 Button
 VBoxContainer
 Camera2D
-AnimationPlayer
 CollisionPolygon2D
 Sprite2D
-AnimationPlayer
 CharacterBody2D
 Node2D

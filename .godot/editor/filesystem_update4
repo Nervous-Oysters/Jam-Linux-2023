@@ -9,3 +9,6 @@ res://src/Actors/Leader.gd
 res://src/Actors/Follower.gd
 res://src/Bonus/StarEgg.gd
 res://src/Actors/Rabbit.gd
+res://src/decor/Santa.tscn
+res://src/decor/Cloud1.tscn
+res://src/decor/Santa.gd
