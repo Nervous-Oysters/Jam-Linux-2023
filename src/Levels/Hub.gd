@@ -6,6 +6,7 @@ var player
 var f_list
 var cam
 var START = Vector2(154, 344)
+var END = 1600
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,3 +27,5 @@ func _process(delta):
 		for follower in f_list:
 			if follower.is_inside_tree(): follower.queue_free()
 		f_list = []
+	if player.position.x > END:
+		get_tree().change_scene_to_file("res://src/Levels/End.tscn")

@@ -1,12 +1,12 @@
 [gd_scene load_steps=14 format=3 uid="uid://b2cji83tys51a"]
 
 [ext_resource type="Script" path="res://src/Actors/Follower.gd" id="1_2u4fe"]
-[ext_resource type="Texture2D" uid="uid://dsbpgsqeeuc31" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
-[ext_resource type="Texture2D" uid="uid://dbuk8883h6503" path="res://assets/empty.png" id="3_nwkc8"]
-[ext_resource type="Texture2D" uid="uid://daxqovwxkewac" path="res://assets/blood1.png" id="4_3r6t7"]
-[ext_resource type="Texture2D" uid="uid://ce03s2mxiatwu" path="res://assets/bloo2.png" id="5_neffb"]
-[ext_resource type="Texture2D" uid="uid://cb55ymtp620l5" path="res://assets/bloo3.png" id="6_iyt27"]
-[ext_resource type="AudioStream" uid="uid://jc8cnt02lcqx" path="res://assets/sounds/eat_egg.wav" id="7_vd663"]
+[ext_resource type="Texture2D" uid="uid://dywoovxk4t8n6" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_dgok4"]
+[ext_resource type="Texture2D" uid="uid://diwl5dfgtmyd6" path="res://assets/empty.png" id="3_nwkc8"]
+[ext_resource type="Texture2D" uid="uid://bpfsylqod285t" path="res://assets/blood1.png" id="4_3r6t7"]
+[ext_resource type="Texture2D" uid="uid://dvwy3fp4jjf7r" path="res://assets/bloo2.png" id="5_neffb"]
+[ext_resource type="Texture2D" uid="uid://6y2ei12nne2s" path="res://assets/bloo3.png" id="6_iyt27"]
+[ext_resource type="AudioStream" uid="uid://lwr7s6tq8epq" path="res://assets/sounds/eat_egg.wav" id="7_vd663"]
 
 [sub_resource type="Animation" id="Animation_651tx"]
 length = 0.001

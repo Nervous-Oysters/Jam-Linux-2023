@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bbme4dwmmou08"]
 
 [ext_resource type="Script" path="res://Camboy.gd" id="1_3l6qm"]
-[ext_resource type="AudioStream" uid="uid://d4hfu2k6ymi8" path="res://assets/sounds/theme_song.wav" id="2_xy7qk"]
+[ext_resource type="AudioStream" uid="uid://di3sujf1kjie4" path="res://assets/sounds/theme_song.wav" id="2_xy7qk"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_3l6qm")

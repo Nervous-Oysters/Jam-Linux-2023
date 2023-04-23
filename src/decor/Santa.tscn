@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://coocasa0u4q1q"]
 
-[ext_resource type="Texture2D" uid="uid://bdrfn176t1lmp" path="res://assets/santa_open.png" id="1_dkd7v"]
-[ext_resource type="Texture2D" uid="uid://cnveftmqeo3s" path="res://assets/santa_close.png" id="2_sob0q"]
+[ext_resource type="Texture2D" uid="uid://42e0q8bb58c0" path="res://assets/santa_open.png" id="1_dkd7v"]
+[ext_resource type="Texture2D" uid="uid://b28vwla3fga7" path="res://assets/santa_close.png" id="2_sob0q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6hed"]
 animations = [{
