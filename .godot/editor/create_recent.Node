@@ -1,5 +1,6 @@
-Area2D
 TileMap
+CharacterBody2D
+Area2D
 CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
@@ -9,5 +10,4 @@ VBoxContainer
 Camera2D
 CollisionPolygon2D
 Sprite2D
-CharacterBody2D
 Node2D

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbme4dwmmou08"]
+
+[ext_resource type="Script" path="res://Camboy.gd" id="1_3l6qm"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_3l6qm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-180, -139)
+anchor_mode = 0
+zoom = Vector2(3, 3)
