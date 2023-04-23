@@ -7,3 +7,4 @@ res://src/Levels/End.tscn
 res://src/animation/Jump.tscn
 res://Camboy.gd
 res://src/Actors/Camboy.tscn
+res://src/Levels/Hub.gd

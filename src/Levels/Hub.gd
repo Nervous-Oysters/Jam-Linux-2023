@@ -4,10 +4,15 @@ extends Node2D
 var followers = preload("res://src/Actors/Follower.tscn")
 var player
 var f_list
+var cam
+var START = Vector2(184, 344)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node("Player")
+	cam = get_node("Camboy")
+	cam.player = player
+	cam.position = START
 	f_list = []
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
