@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1cwln04crr3m"]
 
 [ext_resource type="Script" path="res://src/Actors/Leader.gd" id="1_ehfqo"]
-[ext_resource type="Texture2D" uid="uid://carud30svgr7q" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_ljawh"]
+[ext_resource type="Texture2D" uid="uid://b7ljw6x3qt3yt" path="res://assets/aseprite/Sprite-0001lapin.png" id="2_ljawh"]
 
 [sub_resource type="Animation" id="Animation_ryudg"]
 length = 0.001

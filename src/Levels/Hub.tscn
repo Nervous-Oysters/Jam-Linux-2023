@@ -1,13 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://dom60h7r0tb11"]
+[gd_scene load_steps=13 format=3 uid="uid://dom60h7r0tb11"]
 
 [ext_resource type="Texture2D" uid="uid://d0crrfi3xadle" path="res://assets/green.png" id="1_tv8qq"]
 [ext_resource type="Script" path="res://src/Levels/Hub.gd" id="1_y0ydk"]
 [ext_resource type="PackedScene" uid="uid://c1cwln04crr3m" path="res://src/Actors/Player.tscn" id="2_gg4s8"]
-[ext_resource type="Texture2D" uid="uid://bdiph3vx0ky7x" path="res://assets/tile.png" id="3_p34wj"]
+[ext_resource type="Texture2D" uid="uid://1law74xj8jtg" path="res://assets/tile.png" id="3_p34wj"]
 [ext_resource type="PackedScene" uid="uid://baiu3055nitgi" path="res://src/Bonus/FuckEgg.tscn" id="4_6i1vx"]
 [ext_resource type="PackedScene" uid="uid://cqc4ymen07rc7" path="res://src/Bonus/StarEgg.tscn" id="6_qsoc0"]
 [ext_resource type="PackedScene" uid="uid://coocasa0u4q1q" path="res://src/decor/Santa.tscn" id="7_3yk3d"]
 [ext_resource type="Script" path="res://src/decor/Santa.gd" id="8_sx5eg"]
+[ext_resource type="PackedScene" uid="uid://caaaiwlhpyxio" path="res://src/decor/Cloud1.tscn" id="9_gxyey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_06uo7"]
 texture = ExtResource("1_tv8qq")
@@ -520,5 +521,8 @@ script = ExtResource("8_sx5eg")
 
 [node name="Sprite" parent="Santa" index="0"]
 position = Vector2(0, -30)
+
+[node name="Cloud1" parent="." instance=ExtResource("9_gxyey")]
+position = Vector2(441, 299)
 
 [editable path="Santa"]

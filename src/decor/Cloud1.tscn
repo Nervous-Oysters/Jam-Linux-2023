@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://caaaiwlhpyxio"]
 
 [ext_resource type="Script" path="res://src/decor/Cloud1.gd" id="1_el7jp"]
-[ext_resource type="Texture2D" uid="uid://c1pi8sa6qe7wj" path="res://assets/cloud11.png" id="1_jlmxm"]
-[ext_resource type="Texture2D" uid="uid://sarukqmfqwyn" path="res://assets/cloud12.png" id="2_po250"]
+[ext_resource type="Texture2D" uid="uid://c2i3vrh2hgiim" path="res://assets/cloud11.png" id="1_jlmxm"]
+[ext_resource type="Texture2D" uid="uid://btbcvok30mfmr" path="res://assets/cloud12.png" id="2_po250"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bu50x"]
 
@@ -28,4 +28,4 @@ shape = SubResource("CircleShape2D_bu50x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8pihp")
-frame_progress = 0.207198
+frame_progress = 0.499072
