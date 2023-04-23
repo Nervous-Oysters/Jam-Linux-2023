@@ -1,9 +1,9 @@
 res://src/Actors/Player.tscn
 res://src/Levels/Hub.tscn
 res://src/Actors/Follower.tscn
-res://src/Levels/End.tscn
-res://src/animation/Jump.tscn
 res://src/decor/Santa.tscn
 res://src/Actors/Camboy.tscn
 res://src/Bonus/StarEgg.tscn
-res://src/Levels/Hub.gd
+res://src/Levels/End.tscn
+res://src/animation/Jump.tscn
+res://src/Levels/menu.tscn
