@@ -131,5 +131,5 @@ func die():
 	dying = true
 
 func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	if "Santa" in area.name:
+	if "Santa" in area.name and INVINCIBILITY != 0:
 		die()

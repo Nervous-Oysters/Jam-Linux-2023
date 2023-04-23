@@ -8,3 +8,4 @@ res://src/Levels/End.tscn
 res://src/animation/Jump.tscn
 res://src/Levels/menu.tscn
 res://src/decor/Cloud2.tscn
+res://src/Actors/Follower.gd

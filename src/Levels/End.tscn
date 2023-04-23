@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ci1m4mulk51iq"]
+[gd_scene load_steps=11 format=3 uid="uid://ci1m4mulk51iq"]
 
 [ext_resource type="Texture2D" uid="uid://bukoo8whfmsor" path="res://assets/tile.png" id="1_8g6tf"]
 [ext_resource type="PackedScene" uid="uid://caaaiwlhpyxio" path="res://src/decor/Cloud1.tscn" id="2_d1i8r"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://du07elw14qmhf" path="res://src/decor/Cloud2.tscn" id="3_lfwop"]
 [ext_resource type="PackedScene" uid="uid://bmcs3y2oydajo" path="res://src/decor/Cloud3.tscn" id="4_agjta"]
 [ext_resource type="PackedScene" uid="uid://dhnm470eedyq7" path="res://src/animation/Jump.tscn" id="5_ysreq"]
+[ext_resource type="Script" path="res://src/Button/Button_script.gd" id="7_06hsj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rxbi7"]
 texture = ExtResource("1_8g6tf")
@@ -376,3 +377,11 @@ position = Vector2(658, 528)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(833, 457)
 zoom = Vector2(2.396, 2.396)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 799.0
+offset_top = 335.0
+offset_right = 905.0
+offset_bottom = 375.0
+text = "Replay !"
+script = ExtResource("7_06hsj")
