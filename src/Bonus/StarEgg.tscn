@@ -1,18 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://chue1lny4tvow"]
+[gd_scene load_steps=4 format=3 uid="uid://cqc4ymen07rc7"]
 
-[ext_resource type="Script" path="res://StarEgg.gd" id="1_ohrwx"]
-[ext_resource type="Texture2D" uid="uid://dlitdx521a0ql" path="res://assets/oeufCoeur.png" id="2_qlygx"]
+[ext_resource type="Script" path="res://src/Bonus/StarEgg.gd" id="1_ow4u5"]
+[ext_resource type="Texture2D" uid="uid://bfqfewnfqp1wn" path="res://assets/egg2.png" id="2_dtqos"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1d1vi"]
 radius = 6.08276
 
 [node name="StarEgg" type="Area2D"]
-collision_layer = 0
-script = ExtResource("1_ohrwx")
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_ow4u5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -13)
-texture = ExtResource("2_qlygx")
+texture = ExtResource("2_dtqos")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)

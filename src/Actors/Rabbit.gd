@@ -9,6 +9,17 @@ var JUMPING = false
 var LEFT = false
 var RIGHT = false
 var INVINCIBILITY = 0
+var COLORS = [
+	Color(1., 0., 0.),
+	Color(0., 1., 0.),
+	Color(0., 0., 1.),
+	Color(0., 1., 1.),
+	Color(1., 1., 0.),
+	Color(1., 0., 1.),
+	Color(0., 1., 0.4),
+	Color(252./256, 10./256, 148./256)
+	]
+var rng = RandomNumberGenerator.new()
 
 @onready var animation = $AnimationPlayer
 
@@ -34,7 +45,11 @@ func rabbit_process(delta):
 	else:
 		animation.play("jump")
 		
-	if INVINCIBILITY:
+	if INVINCIBILITY == 1:
+		reset()
+	if INVINCIBILITY != 0:
+		if INVINCIBILITY % 10 == 0:
+			$Sprite2D.modulate = COLORS[rng.randi() % COLORS.size()]
 		INVINCIBILITY -= 1
 
 
@@ -49,3 +64,6 @@ func rabbit_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func reset():
+	pass

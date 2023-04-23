@@ -1,9 +1,7 @@
-<<<<<<< Updated upstream
+TileMap
 Area2D
-=======
 Button
 VBoxContainer
->>>>>>> Stashed changes
 Camera2D
 AnimationPlayer
 CollisionPolygon2D
@@ -12,5 +10,4 @@ Sprite2D
 AnimationPlayer
 CharacterBody2D
 AnimatedSprite2D
-TileMap
 Node2D
