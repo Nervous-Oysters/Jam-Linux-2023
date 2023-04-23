@@ -4,6 +4,17 @@ res://src/Actors/Follower.tscn
 res://src/Bonus/FuckEgg.tscn
 res://src/Bonus/StarEgg.tscn
 res://src/Menu/Menu.tscn
+<<<<<<< HEAD
 res://src/decor/Santa.tscn
 res://src/decor/Cloud1.tscn
 res://src/decor/Cloud1.gd
+=======
+res://src/Bonus/FuckEgg.gd
+res://src/Actors/Leader.gd
+res://src/Actors/Follower.gd
+res://src/Bonus/StarEgg.gd
+res://src/Actors/Rabbit.gd
+res://src/decor/Santa.tscn
+res://src/decor/Cloud1.tscn
+res://src/decor/Santa.gd
+>>>>>>> 88de1ec3d95d5a92a6e672814adf1ead7717bfbb
