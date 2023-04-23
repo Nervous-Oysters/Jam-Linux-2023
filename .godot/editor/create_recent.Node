@@ -1,12 +1,10 @@
-<<<<<<< HEAD
+Camera2D
 AudioStreamPlayer
-=======
 Label
 TextEdit
 CollisionShape2D
 Sprite2D
 AnimationPlayer
->>>>>>> ff9924383253f39701391fb1f392ea84ffdb97b8
 TileMap
 CharacterBody2D
 Area2D
@@ -14,6 +12,5 @@ CanvasLayer
 AnimatedSprite2D
 Button
 VBoxContainer
-Camera2D
 CollisionPolygon2D
 Node2D

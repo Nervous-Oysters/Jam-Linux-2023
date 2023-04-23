@@ -361,7 +361,7 @@ offset_left = 705.0
 offset_top = 419.0
 offset_right = 953.0
 offset_bottom = 471.0
-text = "Waaw You made so much babys 
+text = "Waaw You made so many babies 
                    Well done !"
 
 [node name="Cloud6" parent="." instance=ExtResource("2_d1i8r")]
@@ -372,3 +372,7 @@ position = Vector2(986, 383)
 
 [node name="Jump2" parent="." instance=ExtResource("5_ysreq")]
 position = Vector2(658, 528)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(833, 457)
+zoom = Vector2(2.396, 2.396)
