@@ -1,8 +1,9 @@
+TileMap
+CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
 Area2D
 AnimationPlayer
-TileMap
 Button
 VBoxContainer
 Camera2D
